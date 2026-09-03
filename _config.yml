@@ -1,0 +1,217 @@
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+################################################
+# --- INFORMACIÓ PRINCIPAL DE LA MEVA WEB --- #
+################################################
+
+title: "Martí Bach"
+author: "Martí Bach"
+
+# Descripció de la web
+description: >
+  Web personal de Martí Bach. Tecnologia, Enginyeria Informàtica,
+  futbol, projectes i molt més.
+
+# Paraules clau per als cercadors
+keywords: "Martí Bach, Enginyeria Informàtica, Tecnologia, Programació, Futbol, Projectes"
+
+################################################
+# --- MENÚ DE NAVEGACIÓ --- #
+################################################
+
+navbar-links:
+  🏠 Inici: ""
+  👨‍💻 Sobre mi: "aboutme"
+  💻 Projectes: "projects"
+  ⚽ Futbol: "football"
+  🚀 Blog: "blog"
+  📩 Contacte: "contact"
+
+################################################
+# --- FOTO DE PERFIL --- #
+################################################
+
+# Col·loca la teva foto dins de:
+# /images/profile.jpg
+
+avatar: "/images/profile.jpg"
+
+# La foto apareixerà rodona
+round-avatar: true
+
+################################################
+# --- XARXES SOCIALS --- #
+################################################
+
+social-network-links:
+
+  # IMPORTANT:
+  # Canvia aquests noms pels teus usuaris reals
+
+  github: "MartiBach"
+  linkedin: ""
+  instagram: ""
+
+  # Pots afegir el teu email
+  # email: "elteuemail@gmail.com"
+
+################################################
+# --- OPCIONS GENERALS --- #
+################################################
+
+# Buscador a la web
+post_search: true
+
+# Mostrar el títol a totes les pàgines
+title-on-all-pages: true
+
+# Mostrar resum dels articles
+feed_show_excerpt: true
+
+excerpt_length: 50
+
+# Mostrar etiquetes
+feed_show_tags: true
+
+# Botó per editar pàgines des de GitHub
+edit_page_button: true
+
+# Permetre noms llargs al menú
+navbar-var-length: true
+
+################################################
+# --- ENLLAÇ DE LA WEB --- #
+################################################
+
+# CANVIA AIXÒ PEL TEU USUARI DE GITHUB
+# Exemple: martibach.github.io
+
+url-pretty: "martibach.github.io"
+
+################################################
+# --- XARXES PER COMPARTIR --- #
+################################################
+
+share-links-active:
+  twitter: false
+  facebook: false
+  linkedin: true
+  vk: false
+  whatsapp: true
+
+################################################
+# --- COLORS I ESTIL VISUAL --- #
+################################################
+
+# Fons principal
+page-col: "#0F172A"
+
+# Color del text
+text-col: "#E2E8F0"
+
+# Color dels enllaços
+link-col: "#38BDF8"
+
+# Color quan passes el ratolí
+hover-col: "#22D3EE"
+
+# Barra de navegació
+navbar-col: "#111827"
+
+# Text de la barra
+navbar-text-col: "#F8FAFC"
+
+# Vora de la barra
+navbar-border-col: "#1E293B"
+
+# Peu de pàgina
+footer-col: "#020617"
+
+# Text del footer
+footer-text-col: "#94A3B8"
+
+# Enllaços del footer
+footer-link-col: "#38BDF8"
+
+# Hover dels enllaços
+footer-hover-col: "#22D3EE"
+
+################################################
+# --- DATA --- #
+################################################
+
+date_format: "%d/%m/%Y"
+
+################################################
+# --- CONFIGURACIÓ JEKYLL --- #
+################################################
+
+timezone: "Europe/Madrid"
+
+markdown: kramdown
+
+math_engine: mathjax
+
+syntax_highlighter: rouge
+
+permalink: /:year-:month-:day-:title/
+
+paginate: 5
+
+################################################
+# --- KRAMDOWN --- #
+################################################
+
+kramdown:
+  input: GFM
+
+################################################
+# --- CONFIGURACIÓ PER DEFECTE --- #
+################################################
+
+defaults:
+
+  # Articles del blog
+  -
+    scope:
+      path: ""
+      type: "posts"
+
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+
+  # Totes les altres pàgines
+  -
+    scope:
+      path: ""
+
+    values:
+      layout: "page"
+
+################################################
+# --- FITXERS A EXCLOURE --- #
+################################################
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+################################################
+# --- PLUGINS --- #
+################################################
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+################################################
+# --- FI DE LA CONFIGURACIÓ --- #
+################################################
