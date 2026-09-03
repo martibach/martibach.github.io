@@ -1,199 +1,179 @@
 remote_theme: daattali/beautiful-jekyll@6.0.1
+title: My website
+author: Homer Simpson
 
-################################################
-# --- INFORMACIÓ PRINCIPAL DE LA MEVA WEB --- #
-################################################
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
 
-title: "Martí Bach"
-author: "Martí Bach"
-
-# Descripció de la web
-description: >
-  Web personal de Martí Bach. Tecnologia, Enginyeria Informàtica,
-  futbol, projectes i molt més.
-
-# Paraules clau per als cercadors
-keywords: "Martí Bach, Enginyeria Informàtica, Tecnologia, Programació, Futbol, Projectes"
-
-################################################
-# --- MENÚ DE NAVEGACIÓ --- #
-################################################
+# For each link, make sure to create a corresponding markdown file in the root folder (like `aboutme.md`)
 
 navbar-links:
-  🏠 Inici: ""
-  👨‍💻 Sobre mi: "aboutme"
-  💻 Projectes: "projects"
-  ⚽ Futbol: "football"
-  🚀 Blog: "blog"
-  📩 Contacte: "contact"
+  About Me: "aboutme"
+  Example Page: "example"
 
-################################################
-# --- FOTO DE PERFIL --- #
-################################################
+################
+# --- Logo --- #
+################
 
-# Col·loca la teva foto dins de:
-# /images/profile.jpg
-
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
 avatar: "/images/profile.jpg"
 
-# La foto apareixerà rodona
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
-################################################
-# --- XARXES SOCIALS --- #
-################################################
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# then specify the following parameter
+#title-img: /path/to/image
 
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+# Select the social network links that you want to show in the footer.
+# You can change the order that they show up on the page by changing the order here.
+# Uncomment the links you want to show and add your information to each one.
 social-network-links:
+  email: "homer.simpson@gmail.com"
+  facebook: homer.simpson
+  github: homer.simpson
+  twitter: "@homeeer"
+  youtube: "@homer.simpson"
+  linkedin: homer.simpson
+  whatsapp: "34666666666"  # Afegeix el teu número aquí (codi país + número)
 
-  # IMPORTANT:
-  # Canvia aquests noms pels teus usuaris reals
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  instagram: deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
+#  bluesky: yourname
+#  ORCID: your ORCID ID
+#  google-scholar: your google scholar
+#  discord: "invite_code" or "users/userid" or "invite/invite_code"
+#  kaggle: yourname
+#  hackerrank: yourname
+#  gitlab: yourname
+#  itchio: yourname
+#  untappd: yourname
 
-  github: "MartiBach"
-  linkedin: ""
-  instagram: ""
+###########################
+# --- General options --- #
+###########################
 
-  # Pots afegir el teu email
-  # email: "elteuemail@gmail.com"
-
-################################################
-# --- OPCIONS GENERALS --- #
-################################################
-
-# Buscador a la web
-post_search: true
-
-# Mostrar el títol a totes les pàgines
-title-on-all-pages: true
-
-# Mostrar resum dels articles
-feed_show_excerpt: true
-
-excerpt_length: 50
-
-# Mostrar etiquetes
-feed_show_tags: true
-
-# Botó per editar pàgines des de GitHub
-edit_page_button: true
-
-# Permetre noms llargs al menú
-navbar-var-length: true
-
-################################################
-# --- ENLLAÇ DE LA WEB --- #
-################################################
-
-# CANVIA AIXÒ PEL TEU USUARI DE GITHUB
-# Exemple: martibach.github.io
-
-url-pretty: "martibach.github.io"
-
-################################################
-# --- XARXES PER COMPARTIR --- #
-################################################
-
+# Select which social network share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
+  twitter: true
+  facebook: true
   linkedin: true
   vk: false
   whatsapp: true
 
-################################################
-# --- COLORS I ESTIL VISUAL --- #
-################################################
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "homersimpson.github.io"
 
-# Fons principal
-page-col: "#0F172A"
+# Add the website title to the title of every page
+title-on-all-pages: true
 
-# Color del text
-text-col: "#E2E8F0"
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
 
-# Color dels enllaços
-link-col: "#38BDF8"
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
 
-# Color quan passes el ratolí
-hover-col: "#22D3EE"
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
 
-# Barra de navegació
-navbar-col: "#111827"
+# Add a search button to the navbar
+post_search: true
 
-# Text de la barra
-navbar-text-col: "#F8FAFC"
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
 
-# Vora de la barra
-navbar-border-col: "#1E293B"
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
 
-# Peu de pàgina
-footer-col: "#020617"
+# The keywords to associate with your website, for SEO purposes
+#keywords: "my,list,of,keywords"
 
-# Text del footer
-footer-text-col: "#94A3B8"
+######################################
+# --- Colours / background image --- #
+######################################
 
-# Enllaços del footer
-footer-link-col: "#38BDF8"
+# Personalize the colours in your website. Colour values can be any valid CSS colour
 
-# Hover dels enllaços
-footer-hover-col: "#22D3EE"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 
-################################################
-# --- DATA --- #
-################################################
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
 
-date_format: "%d/%m/%Y"
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
 
-################################################
-# --- CONFIGURACIÓ JEKYLL --- #
-################################################
 
+################
+# --- Misc --- #
+################
+
+# Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+#################################################################################
+# --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
+
+# Output options (more information on Jekyll's site)
 timezone: "Europe/Madrid"
-
 markdown: kramdown
-
 math_engine: mathjax
-
-syntax_highlighter: rouge
-
+syntax_highlighter: rouge # O el que facis servir
+#highlighter: rouge
 permalink: /:year-:month-:day-:title/
-
 paginate: 5
-
-################################################
-# --- KRAMDOWN --- #
-################################################
 
 kramdown:
   input: GFM
 
-################################################
-# --- CONFIGURACIÓ PER DEFECTE --- #
-################################################
-
+# Default YAML values (more information on Jekyll's site)
 defaults:
-
-  # Articles del blog
   -
     scope:
       path: ""
       type: "posts"
-
     values:
       layout: "post"
-      comments: true
-      social-share: true
-
-  # Totes les altres pàgines
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: ""
-
+      path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
 
-################################################
-# --- FITXERS A EXCLOURE --- #
-################################################
-
+# Exclude these files from production site
 exclude:
   - CHANGELOG.md
   - CNAME
@@ -204,14 +184,8 @@ exclude:
   - screenshot.png
   - docs/
 
-################################################
-# --- PLUGINS --- #
-################################################
-
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-################################################
-# --- FI DE LA CONFIGURACIÓ --- #
-################################################
+# Beautiful Jekyll / Dean Attali
